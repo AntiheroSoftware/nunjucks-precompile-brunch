@@ -1,9 +1,9 @@
 {
   "name": "nunjucks-precompile-brunch",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Compiles nunjucks templates for brunch.",
   "author": {
-    "name": "Jean-François Dusariez"
+    "name": "Jean-Franï¿½ois Dusariez"
   },
   "homepage": "https://github.com/AntiheroSoftware/nunjucks-precompile-brunch",
   "repository": {
