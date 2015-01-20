@@ -14,7 +14,6 @@
   "dependencies": {
     "nunjucks": "*"
   },
-  "readme": "## nunjucks-precompile-brunch\nCompiles [Nunjucks](http://mozilla.github.io/nunjucks/) template files for use in [brunch](http://brunch.io). Plugin checks for files that have one of the following extensions:\n\n- .html\n- .njs\n\n\n## Usage\nAdd `\"nunjucks-precompile-brunch\": \"x.y.z\"` to `package.json` of your brunch app.\n\nPick a plugin version that corresponds to your minor (y) brunch version.\n",
   "_npmVersion": "0.0.2",
   "_npmUser": {
     "name": "lintbe",
