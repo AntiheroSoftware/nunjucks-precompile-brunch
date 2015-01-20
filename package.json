@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "description": "Compiles nunjucks templates for brunch.",
   "author": {
-    "name": "Jean-Fran�ois Dusariez"
+    "name": "Jean-François Dusariez"
   },
   "homepage": "https://github.com/AntiheroSoftware/nunjucks-precompile-brunch",
   "repository": {
     "type": "git",
-    "url": "git@github.com:wmdmark/swig-brunch.git"
+    "url": "git@github.com:AntiheroSoftware/nunjucks-precompile-brunch"
   },
   "main": "index.js",
   "dependencies": {
