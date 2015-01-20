@@ -1,6 +1,6 @@
 {
   "name": "nunjucks-precompile-brunch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Compiles nunjucks templates for brunch.",
   "author": {
     "name": "Jean-François Dusariez"
