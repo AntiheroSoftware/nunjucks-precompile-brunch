@@ -15,7 +15,14 @@
 
         NunjucksCompiler.prototype.extension = 'html';
 
-        NunjucksCompiler.prototype.pattern = /(\.(html|njs))$/;
+        NunjucksCompiler.prototype.getDependencies = function(data, path, callback) {
+            var match = data.match(/extends '([a-zA-Z\/]*)'/i);
+            var dependencies = [];
+            if(match && match[1]) {
+                dependencies.push("app/"+match[1]+".html");
+            }
+            callback(null, dependencies);
+        };
 
         NunjucksCompiler.prototype.compile = function(data, path, callback) {
             var error, filename, result;

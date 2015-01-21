@@ -1,15 +1,14 @@
 var requireLoader = {
   on: function() {},
   getSource: function(name) {
-    var storageName = "app/"+name;
     var result;
 
-    result = this.getFromStorage(storageName);
+    result = this.getFromStorage(name);
     if(result !== false) {
       return result;
     } else {
       require(name);
-      result = this.getFromStorage(storageName);
+      result = this.getFromStorage(name);
       if(result  !== false) {
         return result;
       }
@@ -31,5 +30,6 @@ window.nunjucksEnv = {};
 nunjucksEnv = new nunjucks.Environment([requireLoader]);
 
 Backbone.Marionette.Renderer.render = function(templateName, data) {
-  return nunjucksEnv.render(templateName, data);
+  var rendered = nunjucksEnv.render(templateName, data);
+  return rendered;
 };

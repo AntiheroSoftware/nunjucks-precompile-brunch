@@ -4,10 +4,7 @@ Use brunch to precompile your nunjucks templates
 ## nunjucks-precompile-brunch
 
 Compiles [Nunjucks](http://mozilla.github.io/nunjucks/) template files for use in [brunch](http://brunch.io).
-Plugin checks for files that have one of the following extensions:
-
-- .html
-- .njs
+Plugin checks for files that have one of the 'html' extension
 
 ## Usage
 
