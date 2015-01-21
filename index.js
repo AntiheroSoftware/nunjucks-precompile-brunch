@@ -27,7 +27,7 @@
         NunjucksCompiler.prototype.compile = function(data, path, callback) {
             var error, filename, result;
             try {
-                var name = path.split(".")[0];
+                var name = path.replace(/^app\//, '').split(".")[0];
                 return result = nunjucks.precompile(path, {name: name});
             } catch (err) {
                 return error = err;
